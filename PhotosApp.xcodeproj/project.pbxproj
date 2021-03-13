@@ -14,6 +14,7 @@
 		C8A0412C25FBFB2D00E63D71 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0412B25FBFB2D00E63D71 /* SettingsViewController.swift */; };
 		C8A0412F25FC413800E63D71 /* PhotoUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0412E25FC413600E63D71 /* PhotoUser.swift */; };
 		C8A0413225FC416F00E63D71 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0413125FC416F00E63D71 /* UserService.swift */; };
+		C8A0413525FC47E500E63D71 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0413425FC47E500E63D71 /* Constants.swift */; };
 		C8D21E5325FBDD0B001E5CAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D21E5225FBDD0B001E5CAA /* AppDelegate.swift */; };
 		C8D21E5525FBDD0B001E5CAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D21E5425FBDD0B001E5CAA /* SceneDelegate.swift */; };
 		C8D21E5A25FBDD0B001E5CAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8D21E5825FBDD0B001E5CAA /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		C8A0412B25FBFB2D00E63D71 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C8A0412E25FC413600E63D71 /* PhotoUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUser.swift; sourceTree = "<group>"; };
 		C8A0413125FC416F00E63D71 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		C8A0413425FC47E500E63D71 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C8D21E4F25FBDD0B001E5CAA /* PhotosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D21E5225FBDD0B001E5CAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8D21E5425FBDD0B001E5CAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		C8A0411925FBEC7000E63D71 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C8A0413425FC47E500E63D71 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				C8A0413225FC416F00E63D71 /* UserService.swift in Sources */,
 				C8A0412C25FBFB2D00E63D71 /* SettingsViewController.swift in Sources */,
 				C8A0412F25FC413800E63D71 /* PhotoUser.swift in Sources */,
+				C8A0413525FC47E500E63D71 /* Constants.swift in Sources */,
 				C8A0412625FBF93B00E63D71 /* FeedViewController.swift in Sources */,
 				C8D21E5325FBDD0B001E5CAA /* AppDelegate.swift in Sources */,
 				C8D21E5525FBDD0B001E5CAA /* SceneDelegate.swift in Sources */,

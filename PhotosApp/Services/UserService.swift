@@ -10,7 +10,7 @@ import FirebaseFirestore
 
 class UserService {
     
-    static func retrieveProfile(userId:String) {
+    static func retrieveProfile(userId:String, completion: @escaping (PhotoUser?) -> Void ) {
         
         // Get a firestore reference
         let db = Firestore.firestore()
@@ -34,11 +34,12 @@ class UserService {
                 u.username = profile["username"] as? String
                 
                 // Return the user
-                
+                completion(u)
             }
             else {
                 // Couldn't get profile, no profile
                 // Return nil
+                completion(nil)
             }
             
         }
