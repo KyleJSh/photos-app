@@ -44,11 +44,12 @@ class CameraViewController: UIViewController {
                 self.progressBar.progress = Float(pct)
                 
                 // Update the label
-                self.progressLabel.text = "\(pct) %"
+                let roundedPct = Int(pct * 100)
+                self.progressLabel.text = "\(roundedPct) %"
                 self.progressLabel.alpha = 1
                 
                 // Check if it's done
-                if pct == 100 {
+                if pct == 1 {
                     self.doneButton.alpha = 1
                 }
                 
@@ -58,4 +59,18 @@ class CameraViewController: UIViewController {
         
     }
 
+    
+    @IBAction func doneTapped(_ sender: Any) {
+        
+        // Get a reference to the tab bar controller
+        let tabBarVC = self.tabBarController as? MainTabBarController
+        
+        if let tabBarVc = tabBarVC {
+            
+            // Call go to feed
+            tabBarVC?.goToFeed()
+        }
+        
+    }
+    
 }

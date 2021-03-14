@@ -94,6 +94,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWB-VJ-alc">
                                         <rect key="frame" x="148" y="198.5" width="78" height="30"/>
                                         <state key="normal" title="Go To Feed"/>
+                                        <connections>
+                                            <action selector="doneTapped:" destination="U31-NK-KRd" eventType="touchUpInside" id="9sW-Xx-Y9y"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

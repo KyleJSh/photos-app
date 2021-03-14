@@ -108,4 +108,11 @@ extension MainTabBarController: UIImagePickerControllerDelegate & UINavigationCo
         
     }
     
+    func goToFeed() {
+        
+        // Switch tab to the first one
+        selectedIndex = 0
+        
+    }
+    
 }
