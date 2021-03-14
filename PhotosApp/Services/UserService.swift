@@ -10,6 +10,39 @@ import FirebaseFirestore
 
 class UserService {
     
+    static func creatProfile(userId:String, username:String, completion: @escaping(PhotoUser?) -> Void ) {
+        
+        // Create a dictionary for the profile data
+        let profileData = ["username":username]
+        
+        // Get a firestore reference
+        let db = Firestore.firestore()
+        
+        // Create the document for the userId
+        db.collection("users").document(userId).setData(profileData) { (error) in
+            
+            // Check for errors
+            if error == nil {
+                //Profile was created successfully
+                // Create and return a photo user
+                var u = PhotoUser()
+                u.username = username
+                u.userId = userId
+                
+                completion(u)
+            }
+            else {
+                // Something went wrong
+                // return nil
+                completion(nil)
+            }
+        }
+        
+        
+        // Return result
+        
+    }
+    
     static func retrieveProfile(userId:String, completion: @escaping (PhotoUser?) -> Void ) {
         
         // Get a firestore reference
