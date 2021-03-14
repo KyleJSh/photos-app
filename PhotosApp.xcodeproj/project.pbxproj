@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C84A9B5F25FE6C43000E170E /* LocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84A9B5E25FE6C43000E170E /* LocalStorageService.swift */; };
 		C8A0411E25FBED6300E63D71 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0411D25FBED6300E63D71 /* LoginViewController.swift */; };
 		C8A0412325FBF32200E63D71 /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0412225FBF32200E63D71 /* CreateProfileViewController.swift */; };
 		C8A0412625FBF93B00E63D71 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0412525FBF93B00E63D71 /* FeedViewController.swift */; };
@@ -28,6 +29,7 @@
 		10A3BFB502DAD62D2A7FEC31 /* Pods-PhotosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotosApp.debug.xcconfig"; path = "Target Support Files/Pods-PhotosApp/Pods-PhotosApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C563866DCC42E48ED67C01AF /* Pods_PhotosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C835568579C7B56CCEAE7126 /* Pods-PhotosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotosApp.release.xcconfig"; path = "Target Support Files/Pods-PhotosApp/Pods-PhotosApp.release.xcconfig"; sourceTree = "<group>"; };
+		C84A9B5E25FE6C43000E170E /* LocalStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageService.swift; sourceTree = "<group>"; };
 		C8A0411D25FBED6300E63D71 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C8A0412225FBF32200E63D71 /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
 		C8A0412525FBF93B00E63D71 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				C8A0413125FC416F00E63D71 /* UserService.swift */,
+				C84A9B5E25FE6C43000E170E /* LocalStorageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				C8D21E5325FBDD0B001E5CAA /* AppDelegate.swift in Sources */,
 				C8D21E5525FBDD0B001E5CAA /* SceneDelegate.swift in Sources */,
 				C8A0412925FBFB0400E63D71 /* CameraViewController.swift in Sources */,
+				C84A9B5F25FE6C43000E170E /* LocalStorageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
