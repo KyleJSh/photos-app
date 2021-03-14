@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C84A9B5F25FE6C43000E170E /* LocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84A9B5E25FE6C43000E170E /* LocalStorageService.swift */; };
+		C84A9B6225FE7C62000E170E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84A9B6125FE7C62000E170E /* MainTabBarController.swift */; };
 		C8A0411E25FBED6300E63D71 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0411D25FBED6300E63D71 /* LoginViewController.swift */; };
 		C8A0412325FBF32200E63D71 /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0412225FBF32200E63D71 /* CreateProfileViewController.swift */; };
 		C8A0412625FBF93B00E63D71 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0412525FBF93B00E63D71 /* FeedViewController.swift */; };
@@ -30,6 +31,7 @@
 		C563866DCC42E48ED67C01AF /* Pods_PhotosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C835568579C7B56CCEAE7126 /* Pods-PhotosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotosApp.release.xcconfig"; path = "Target Support Files/Pods-PhotosApp/Pods-PhotosApp.release.xcconfig"; sourceTree = "<group>"; };
 		C84A9B5E25FE6C43000E170E /* LocalStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageService.swift; sourceTree = "<group>"; };
+		C84A9B6125FE7C62000E170E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		C8A0411D25FBED6300E63D71 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C8A0412225FBF32200E63D71 /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
 		C8A0412525FBF93B00E63D71 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				C8A0412525FBF93B00E63D71 /* FeedViewController.swift */,
 				C8A0412825FBFB0400E63D71 /* CameraViewController.swift */,
 				C8A0412B25FBFB2D00E63D71 /* SettingsViewController.swift */,
+				C84A9B6125FE7C62000E170E /* MainTabBarController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			files = (
 				C8A0412325FBF32200E63D71 /* CreateProfileViewController.swift in Sources */,
 				C8A0411E25FBED6300E63D71 /* LoginViewController.swift in Sources */,
+				C84A9B6225FE7C62000E170E /* MainTabBarController.swift in Sources */,
 				C8A0413225FC416F00E63D71 /* UserService.swift in Sources */,
 				C8A0412C25FBFB2D00E63D71 /* SettingsViewController.swift in Sources */,
 				C8A0412F25FC413800E63D71 /* PhotoUser.swift in Sources */,
