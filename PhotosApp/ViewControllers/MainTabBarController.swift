@@ -101,7 +101,6 @@ extension MainTabBarController: UIImagePickerControllerDelegate & UINavigationCo
                 cameraVC.savePhoto(image: selectedImage)
                 
             }
-                        
         }
         
         // Dismiss the image picker
