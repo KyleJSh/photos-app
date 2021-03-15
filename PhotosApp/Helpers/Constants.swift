@@ -11,8 +11,12 @@ struct Constants {
     
     struct Storyboard {
         
+        static let photoCellId = "Photo Cell"
+        
         static let loginNavController = "loginNavController"
+        
         static let tabBarController = "mainTabBarController"
+        
         static let profileSegue = "goToCreateProfile"
         
     }
@@ -20,8 +24,8 @@ struct Constants {
     struct LocalStorage {
         
         static let userIdKey = "storedUserId"
+        
         static let usernameKey = "storedUsername"
         
     }
-    
 }

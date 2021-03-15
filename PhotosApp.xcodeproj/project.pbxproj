@@ -12,6 +12,7 @@
 		C84A9B6625FE8F03000E170E /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84A9B6525FE8F03000E170E /* Photo.swift */; };
 		C84A9B6925FE8F49000E170E /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84A9B6825FE8F49000E170E /* PhotoService.swift */; };
 		C84C0BAA25FECE4100F79D8A /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84C0BA925FECE4100F79D8A /* PhotoCell.swift */; };
+		C84C0BAD25FEDBDC00F79D8A /* ImageCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84C0BAC25FEDBDC00F79D8A /* ImageCacheService.swift */; };
 		C8A0411E25FBED6300E63D71 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0411D25FBED6300E63D71 /* LoginViewController.swift */; };
 		C8A0412325FBF32200E63D71 /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0412225FBF32200E63D71 /* CreateProfileViewController.swift */; };
 		C8A0412625FBF93B00E63D71 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0412525FBF93B00E63D71 /* FeedViewController.swift */; };
@@ -38,6 +39,7 @@
 		C84A9B6525FE8F03000E170E /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		C84A9B6825FE8F49000E170E /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 		C84C0BA925FECE4100F79D8A /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		C84C0BAC25FEDBDC00F79D8A /* ImageCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheService.swift; sourceTree = "<group>"; };
 		C8A0411D25FBED6300E63D71 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C8A0412225FBF32200E63D71 /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
 		C8A0412525FBF93B00E63D71 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				C8A0413125FC416F00E63D71 /* UserService.swift */,
 				C84A9B5E25FE6C43000E170E /* LocalStorageService.swift */,
 				C84A9B6825FE8F49000E170E /* PhotoService.swift */,
+				C84C0BAC25FEDBDC00F79D8A /* ImageCacheService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				C84A9B6925FE8F49000E170E /* PhotoService.swift in Sources */,
 				C84A9B6625FE8F03000E170E /* Photo.swift in Sources */,
 				C8A0413525FC47E500E63D71 /* Constants.swift in Sources */,
+				C84C0BAD25FEDBDC00F79D8A /* ImageCacheService.swift in Sources */,
 				C8A0412625FBF93B00E63D71 /* FeedViewController.swift in Sources */,
 				C8D21E5325FBDD0B001E5CAA /* AppDelegate.swift in Sources */,
 				C8D21E5525FBDD0B001E5CAA /* SceneDelegate.swift in Sources */,
