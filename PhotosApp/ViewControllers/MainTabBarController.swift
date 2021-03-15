@@ -15,16 +15,15 @@ class MainTabBarController: UITabBarController {
         // Do any additional setup after loading the view.
     }
     
-    
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         
-        // Detech which tab was tapped on
+        // Detect which tab was tapped on
         if item.tag == 2 {
             
             // Camera tab was tapped on
             
             // Create the action sheet
-            let actionSheet = UIAlertController(title: "Add a photo", message: "Select a source", preferredStyle: .actionSheet)
+            let actionSheet = UIAlertController(title: "Add a Photo", message: "Select a source:", preferredStyle: .actionSheet)
             
             // Only add camera button if it's available
             if UIImagePickerController.isSourceTypeAvailable(.camera) {
@@ -49,15 +48,13 @@ class MainTabBarController: UITabBarController {
                 actionSheet.addAction(libraryButton)
             }
             
-            
             // Create and add the Cancel button
             let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-            actionSheet.addAction((cancelButton))
+            actionSheet.addAction(cancelButton)
             
             // Display the action sheet
             present(actionSheet, animated: true, completion: nil)
         }
-        
     }
     
     func showImagePickerController(mode: UIImagePickerController.SourceType) {
@@ -72,7 +69,6 @@ class MainTabBarController: UITabBarController {
         // present the image picker
         present(imagePicker, animated: true, completion: nil)
     }
-    
 }
 
 extension MainTabBarController: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
@@ -81,7 +77,6 @@ extension MainTabBarController: UIImagePickerControllerDelegate & UINavigationCo
         
         // Dismiss the image picker
         dismiss(animated: true, completion: nil)
-        
     }
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -105,14 +100,11 @@ extension MainTabBarController: UIImagePickerControllerDelegate & UINavigationCo
         
         // Dismiss the image picker
         dismiss(animated: true, completion: nil)
-        
     }
     
     func goToFeed() {
         
         // Switch tab to the first one
         selectedIndex = 0
-        
     }
-    
 }

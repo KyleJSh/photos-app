@@ -20,8 +20,6 @@ class SettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-   
     @IBAction func signOutTapped(_ sender: Any) {
         
         // Sign out with Firebase Auth
@@ -42,7 +40,5 @@ class SettingsViewController: UIViewController {
         catch {
             // Couldn't sign out user
         }
-        
     }
-    
 }

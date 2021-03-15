@@ -12,10 +12,9 @@ import FirebaseAuth
 
 class PhotoService {
     
-    static func retrievePhotos(completion: @escaping ([Photo]) -> Void ) {
+    static func retrievePhotos(completion: @escaping ([Photo]) -> Void) {
         
         // Get a database reference
-        
         let db = Firestore.firestore()
         
         // Get all the documents from the photos collection
@@ -46,16 +45,12 @@ class PhotoService {
                         // Store it in our array
                         photoArray.insert(p!, at: 0)
                     }
-                    
                 }
                 
                 // Pass back the photo array
                 completion(photoArray)
-                
             }
-            
         }
-        
     }
     
     static func savePhoto(image:UIImage, progressUpdate: @escaping (Double) -> Void ) {
@@ -75,7 +70,6 @@ class PhotoService {
         
         // Create a filename
         let filename = UUID().uuidString
-        
         
         // Get the user id of the current user
         let userId = Auth.auth().currentUser!.uid
@@ -103,7 +97,6 @@ class PhotoService {
             
             progressUpdate(pct)
         }
-        
     }
     
     private static func createDatabaseEntry(ref: StorageReference) {
@@ -149,5 +142,4 @@ class PhotoService {
             }
         }
     }
-    
 }

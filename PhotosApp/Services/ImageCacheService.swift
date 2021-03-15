@@ -21,7 +21,6 @@ class ImageCacheService {
         
         // Save the image
         imageCache[url!] = image!
-        
     }
     
     static func getImage(url:String?) -> UIImage? {
@@ -33,6 +32,5 @@ class ImageCacheService {
         
         // Check the image cache for the url
         return imageCache[url!]
-        
     }
 }

@@ -10,7 +10,7 @@ import FirebaseFirestore
 
 class UserService {
     
-    static func creatProfile(userId:String, username:String, completion: @escaping(PhotoUser?) -> Void ) {
+    static func createProfile(userId:String, username:String, completion: @escaping (PhotoUser?) -> Void ) {
         
         // Create a dictionary for the profile data
         let profileData = ["username":username]
@@ -23,7 +23,7 @@ class UserService {
             
             // Check for errors
             if error == nil {
-                //Profile was created successfully
+                // Profile was created successfully
                 // Create and return a photo user
                 var u = PhotoUser()
                 u.username = username
@@ -33,14 +33,10 @@ class UserService {
             }
             else {
                 // Something went wrong
-                // return nil
+                // Return nil
                 completion(nil)
             }
         }
-        
-        
-        // Return result
-        
     }
     
     static func retrieveProfile(userId:String, completion: @escaping (PhotoUser?) -> Void ) {
@@ -74,9 +70,6 @@ class UserService {
                 // Return nil
                 completion(nil)
             }
-            
         }
-        
     }
-    
 }

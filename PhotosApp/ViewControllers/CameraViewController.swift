@@ -54,25 +54,19 @@ class CameraViewController: UIViewController {
                     self.progressLabel.text = "Upload Completed!"
                     self.doneButton.alpha = 1
                 }
-                
             }
-            
         }
-        
     }
 
-    
     @IBAction func doneTapped(_ sender: Any) {
         
         // Get a reference to the tab bar controller
         let tabBarVC = self.tabBarController as? MainTabBarController
         
-        if let tabBarVc = tabBarVC {
+        if let tabBarVC = tabBarVC {
             
             // Call go to feed
-            tabBarVC?.goToFeed()
+            tabBarVC.goToFeed()
         }
-        
     }
-    
 }

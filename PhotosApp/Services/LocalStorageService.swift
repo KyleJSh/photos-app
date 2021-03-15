@@ -17,7 +17,6 @@ class LocalStorageService {
         // Save userUd and username to defaults
         defaults.set(userId, forKey: Constants.LocalStorage.userIdKey)
         defaults.set(username, forKey: Constants.LocalStorage.usernameKey)
-        
     }
     
     static func loadUser() -> PhotoUser? {
@@ -50,5 +49,4 @@ class LocalStorageService {
         defaults.set(nil, forKey: Constants.LocalStorage.userIdKey)
         defaults.set(nil, forKey: Constants.LocalStorage.usernameKey)
     }
-    
 }

@@ -18,7 +18,6 @@ struct Constants {
         static let tabBarController = "mainTabBarController"
         
         static let profileSegue = "goToCreateProfile"
-        
     }
     
     struct LocalStorage {
@@ -26,6 +25,5 @@ struct Constants {
         static let userIdKey = "storedUserId"
         
         static let usernameKey = "storedUsername"
-        
     }
 }

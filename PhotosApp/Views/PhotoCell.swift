@@ -72,7 +72,6 @@ class PhotoCell: UITableViewCell {
         let dataTask = session.dataTask(with: url!) { (data, response, error) in
             
             // Check for errors and data
-            
             if error == nil && data != nil {
                                 
                 // Set the image view
@@ -87,19 +86,13 @@ class PhotoCell: UITableViewCell {
                     return
                 }
                 
-                // Set the image view
-                
+                // Set the image view, run on main thread
                 DispatchQueue.main.async {
-                    
                     self.photoImageView.image = image
-                    
                 }
-                
             }
-            
         }
         dataTask.resume()
         
     }
-    
 }

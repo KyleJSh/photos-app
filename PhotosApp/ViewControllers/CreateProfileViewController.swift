@@ -9,18 +9,14 @@ import UIKit
 import FirebaseAuth
 
 class CreateProfileViewController: UIViewController {
-
-    
     
     @IBOutlet weak var usernameTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
-
     @IBAction func confirmTapped(_ sender: Any) {
         
         // Check that there is a user logged in
@@ -40,7 +36,7 @@ class CreateProfileViewController: UIViewController {
         }
         
         // Call the user service to the profile
-        UserService.creatProfile(userId: Auth.auth().currentUser!.uid, username: username!) { (user) in
+        UserService.createProfile(userId: Auth.auth().currentUser!.uid, username: username!) { (user) in
             
             // Check if it was successfully created
             if user != nil {
@@ -57,14 +53,6 @@ class CreateProfileViewController: UIViewController {
             else {
                 // If not, display error
             }
-            
-            
-            
-            
-            
         }
-        
-        
-        
     }
 }

@@ -22,7 +22,7 @@ struct Photo {
         let data = snapshot.data()
         
         let photoId = data["photoId"] as? String
-        let userId =  data["byId"] as? String
+        let userId = data["byId"] as? String
         let username = data["byUsername"] as? String
         let date = data["date"] as? String
         let url = data["url"] as? String
@@ -39,5 +39,4 @@ struct Photo {
         self.date = date
         self.url = url
     }
-    
 }

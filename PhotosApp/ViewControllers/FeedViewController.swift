@@ -21,7 +21,7 @@ class FeedViewController: UIViewController {
         tableView.dataSource = self
         
         // Add pull to refresh
-        addRefreshControll()
+        addRefreshControl()
         
         // Call the photo service to retrieve the photos
         PhotoService.retrievePhotos { (retrievedPhotos) in
@@ -31,11 +31,10 @@ class FeedViewController: UIViewController {
             
             // Tell the table view to reload
             self.tableView.reloadData()
-            
         }
     }
     
-    func addRefreshControll() {
+    func addRefreshControl() {
         
         // Create refresh control
         let refresh = UIRefreshControl()
@@ -45,7 +44,6 @@ class FeedViewController: UIViewController {
         
         // Add to table view
         self.tableView.addSubview(refresh)
-        
     }
     
     @objc func refreshFeed(refreshControl: UIRefreshControl) {
@@ -64,10 +62,8 @@ class FeedViewController: UIViewController {
                 // Stop the spinner
                 refreshControl.endRefreshing()
             }
-            
         }
     }
-
 }
 
 extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
@@ -75,7 +71,6 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return photos.count
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -92,6 +87,4 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
         // Return the cell
         return cell!
     }
-    
-  
 }

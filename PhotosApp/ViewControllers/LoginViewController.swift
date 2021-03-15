@@ -8,15 +8,19 @@
 import UIKit
 import FirebaseUI
 
-
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // create smooth corners on loginButton
         loginButton.layer.cornerRadius = 10
+        
+    }
+    
+    @IBAction func loginTapped(_ sender: Any) {
         
         // create a Firebase AuthUI obj
         let authUI = FUIAuth.defaultAuthUI()
@@ -35,12 +39,7 @@ class LoginViewController: UIViewController {
             
             // present it
             present(authViewController, animated: true, completion: nil)
-            
         }
-        
-    }
-    
-    @IBAction func loginTapped(_ sender: Any) {
     }
 }
 
@@ -83,12 +82,7 @@ extension LoginViewController: FUIAuthDelegate {
                     self.view.window?.rootViewController = tabBarVC
                     self.view.window?.makeKeyAndVisible()
                 }
-                
-                
             }
-            
-            
         }
-        
     }
 }
