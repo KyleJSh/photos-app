@@ -50,6 +50,8 @@ class CameraViewController: UIViewController {
                 
                 // Check if it's done
                 if pct == 1 {
+                    
+                    self.progressLabel.text = "Upload Completed!"
                     self.doneButton.alpha = 1
                 }
                 

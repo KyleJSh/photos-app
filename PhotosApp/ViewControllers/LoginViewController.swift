@@ -10,13 +10,16 @@ import FirebaseUI
 
 
 class LoginViewController: UIViewController {
-
+    
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        loginButton.layer.cornerRadius = 10
+        
         // create a Firebase AuthUI obj
         let authUI = FUIAuth.defaultAuthUI()
-        
         
         // check it isn't nil
         if let authUI = authUI {
